@@ -1,31 +1,31 @@
 # Rendered by scripts/homebrew-formula.sh in github.com/nomi-language/nomi
-# from packaging/homebrew/nomi.rb and the checksums of release v0.0.1.
+# from packaging/homebrew/nomi.rb and the checksums of release v0.0.2.
 # Do not edit: render it again for the next release.
 class Nomi < Formula
   desc "Statically typed, immutable, functional-first programming language"
   homepage "https://nomi-lang.org"
-  version "0.0.1"
+  version "0.0.2"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
       url "https://github.com/nomi-language/nomi/releases/download/v#{version}/nomi_v#{version}_darwin_arm64.tar.gz"
-      sha256 "a1d7afcaffca57b881e48addbab14d0d4a847b83a4b06532c7ac67df7e185109"
+      sha256 "6aaa4cacc1f9bd9d296f43a3f6d945102d41d71e11d8e9bbe791b2e1ef011d5b"
     end
     on_intel do
       url "https://github.com/nomi-language/nomi/releases/download/v#{version}/nomi_v#{version}_darwin_amd64.tar.gz"
-      sha256 "162a4cdafb4ccf2faa25515b0ee73c82921d68ba4050145f0b16afc0cc4f54b8"
+      sha256 "41771f2748e03a9bda6d8be461390d60002b79d731d3d3c159a7752e75692f33"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/nomi-language/nomi/releases/download/v#{version}/nomi_v#{version}_linux_arm64.tar.gz"
-      sha256 "99ccdc7d1d292348f6b0fcfaed4988e2a8ad03b3456edac15dd8c6505e36ba0e"
+      sha256 "5b3eb671bbf76fcec61ba22e771404bd7b194d647e322bc8ed88bfd8f7bc150c"
     end
     on_intel do
       url "https://github.com/nomi-language/nomi/releases/download/v#{version}/nomi_v#{version}_linux_amd64.tar.gz"
-      sha256 "14bad056018dce5b82406580f74ffd2d04f5b5892ee3f791cbb3d120f14fe7bc"
+      sha256 "92b306a62a443dd4a5791b36584738657fdd630320a3f7eac50001881efbb1d2"
     end
   end
 
